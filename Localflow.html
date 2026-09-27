@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LocalFlow AI - 24/7 AI Automation Agency for Contractors & Clinics</title>
+  <meta name="description" content="Turn missed calls into booked appointments in 30 seconds for local contractors and clinics. Sub-15s response, calendar sync, zero missed leads." />
+  
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0f172a',
+              card: '#1e293b',
+              blue: '#2563eb',
+              emerald: '#10b981',
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Lucide Icons via unpkg -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#0f172a] text-slate-100 antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- 1. NAVIGATION BAR -->
+  <header class="sticky top-0 z-50 w-full bg-[#0f172a]/95 backdrop-blur-md border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center shadow-lg shadow-blue-600/20 font-bold text-white text-lg">
+          LF
+        </div>
+        <div class="flex flex-col">
+          <span class="text-xl font-bold tracking-tight text-white">
+            LocalFlow<span class="text-blue-500">.AI</span>
+          </span>
+          <span class="text-[10px] uppercase tracking-wider text-slate-400 font-medium">
+            by NexGen Creative
+          </span>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#solutions" class="hover:text-blue-400 transition-colors">Solutions</a>
+        <a href="#comparison" class="hover:text-blue-400 transition-colors">The Difference</a>
+        <a href="#calculator" class="hover:text-blue-400 transition-colors">ROI Calculator</a>
+        <a href="#how-it-works" class="hover:text-blue-400 transition-colors">How It Works</a>
+        <a href="#pricing" class="hover:text-blue-400 transition-colors">Pricing</a>
+        <a href="#faq" class="hover:text-blue-400 transition-colors">FAQ</a>
+      </nav>
+
+      <!-- Primary Actions -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/919748199707?text=Hi%20LocalFlow%20AI,%20I'd%20like%20to%20learn%20more." target="_blank" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 text-xs font-medium text-emerald-400 bg-emerald-950/60 hover:bg-emerald-900/80 rounded-lg border border-emerald-800/50 transition-colors">
+          <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+          <span>WhatsApp</span>
+        </a>
+        <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-lg shadow-md shadow-blue-600/25 transition-all">
+          <i data-lucide="phone-call" class="w-3.5 h-3.5"></i>
+          <span>Book Free Audit</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION -->
+  <section class="relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-7 flex flex-col items-start text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800/60 text-blue-300 text-xs font-semibold mb-6">
+            <span class="flex h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span>⚡ 24/7 AI Systems for Local Contractors & Clinics</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+            Turn Missed Calls Into <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-300">Booked Appointments</span> in 30 Seconds
+          </h1>
+
+          <p class="text-lg sm:text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl">
+            We build custom AI booking assistants that reply instantly, qualify leads, and schedule jobs directly into your calendar.
+          </p>
+
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-7 py-4 text-base font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg shadow-blue-600/30 transition-all">
+              <span>Get Free Audit</span>
+              <i data-lucide="arrow-right" class="w-5 h-5"></i>
+            </a>
+            <a href="#demo-section" class="inline-flex items-center justify-center gap-2 px-6 py-4 text-base font-semibold text-slate-200 bg-slate-800 hover:bg-slate-700 rounded-xl border border-slate-700 transition-all">
+              <i data-lucide="play" class="w-4 h-4 text-blue-400"></i>
+              <span>Watch 2-Min Demo</span>
+            </a>
+          </div>
+
+          <div class="pt-6 border-t border-slate-800/80 w-full flex flex-wrap items-center gap-x-6 gap-y-2 text-xs sm:text-sm text-slate-400 font-medium">
+            <span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> No code required</span>
+            <span>•</span>
+            <span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> 5-day setup</span>
+            <span>•</span>
+            <span class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400"></i> Guaranteed response time</span>
+          </div>
+        </div>
+
+        <!-- Phone Preview -->
+        <div class="lg:col-span-5" id="demo-section">
+          <div class="mx-auto max-w-sm rounded-3xl bg-slate-900 border border-slate-700 shadow-2xl p-5">
+            <div class="flex items-center justify-between pb-3 mb-3 border-b border-slate-800 text-xs text-slate-400">
+              <div class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span class="font-semibold text-slate-200">LocalFlow Dispatch Engine</span>
+              </div>
+              <span class="text-blue-400 font-mono text-[11px]">Sub-15s SLA</span>
+            </div>
+
+            <div class="space-y-3 min-h-[300px] flex flex-col justify-end text-xs">
+              <div class="p-3 rounded-xl bg-red-950/40 border border-red-900/40 flex items-start gap-3">
+                <i data-lucide="phone-missed" class="w-4 h-4 text-red-400 mt-0.5"></i>
+                <div>
+                  <span class="font-semibold text-slate-200 block">Missed Call: Sarah Jenkins</span>
+                  <span class="text-slate-400 text-[11px]">Emergency HVAC Leaking Water • 10:42 AM</span>
+                </div>
+              </div>
+
+              <div class="bg-blue-600 text-white p-3 rounded-2xl rounded-tr-xs shadow-md">
+                <p class="text-[11px] leading-relaxed">
+                  Hi Sarah! This is Alex from Apex Climate. Saw we just missed your call—are you having an emergency breakdown or looking for maintenance?
+                </p>
+                <span class="text-[10px] text-blue-200 block mt-1">⚡ Auto-sent in 14s</span>
+              </div>
+
+              <div class="bg-slate-800 text-slate-200 p-3 rounded-2xl rounded-tl-xs border border-slate-700">
+                <p class="text-[11px] leading-relaxed">
+                  My rooftop unit is leaking! Can someone come out today before 2 PM?
+                </p>
+              </div>
+
+              <div class="bg-emerald-950/70 border border-emerald-800/80 p-3 rounded-xl flex items-center justify-between text-emerald-300">
+                <div class="flex items-center gap-2">
+                  <i data-lucide="calendar-check" class="w-4 h-4 text-emerald-400"></i>
+                  <div>
+                    <p class="font-semibold text-white text-[11px]">Dispatched: Today at 1:15 PM</p>
+                    <p class="text-[10px] text-emerald-400">Synced to Google Calendar & Jobber CRM</p>
+                  </div>
+                </div>
+                <span class="font-bold text-white font-mono text-xs">₹4,500 Est.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PROBLEM VS SOLUTION GRID -->
+  <section id="comparison" class="py-20 bg-slate-950/60 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+          The Old Way vs The LocalFlow Way
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg">
+          The difference between losing 35% of inbound calls and capturing every booked appointment on autopilot.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+        <!-- The Old Way -->
+        <div class="p-8 rounded-2xl bg-slate-900 border border-red-900/40">
+          <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-800">
+            <h3 class="text-xl font-bold text-white">The Old Way</h3>
+            <span class="text-xs font-bold text-red-400 bg-red-950 px-2.5 py-1 rounded">Lost Revenue</span>
+          </div>
+          <ul class="space-y-4 text-sm text-slate-300">
+            <li class="flex items-start gap-3">
+              <i data-lucide="x-circle" class="w-5 h-5 text-red-500 shrink-0 mt-0.5"></i>
+              <span><strong>Voicemail Black Hole:</strong> 82% of callers hang up and call the next Google listing.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="x-circle" class="w-5 h-5 text-red-500 shrink-0 mt-0.5"></i>
+              <span><strong>Slow Manual Texting:</strong> Staff replies hours later when the customer is already booked elsewhere.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="x-circle" class="w-5 h-5 text-red-500 shrink-0 mt-0.5"></i>
+              <span><strong>Zero After-Hours Coverage:</strong> Night & weekend inquiries sit untouched until Monday.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="x-circle" class="w-5 h-5 text-red-500 shrink-0 mt-0.5"></i>
+              <span><strong>Staff Burnout:</strong> Front desk overwhelmed by basic price & schedule questions.</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- The LocalFlow Way -->
+        <div class="p-8 rounded-2xl bg-slate-900 border-2 border-blue-500 shadow-2xl">
+          <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-800">
+            <h3 class="text-xl font-bold text-white">The LocalFlow Way</h3>
+            <span class="text-xs font-bold text-emerald-400 bg-emerald-950 px-2.5 py-1 rounded">100% Lead Capture</span>
+          </div>
+          <ul class="space-y-4 text-sm text-slate-300">
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span><strong>Sub-15s Automated SMS:</strong> Immediate conversational outreach stops competitor shopping.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span><strong>Direct Calendar Booking:</strong> Books appointments into Google Calendar or CRM in real-time.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span><strong>24/7/365 Coverage:</strong> Evenings, weekends, holidays—never miss another job.</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <i data-lucide="check-circle" class="w-5 h-5 text-emerald-400 shrink-0 mt-0.5"></i>
+              <span><strong>Pre-Qualified Leads:</strong> AI gathers job address, urgency, photos, and problem description.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. CORE FEATURES -->
+  <section id="solutions" class="py-24">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+          Core AI Systems Built For Conversion
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg">
+          Three specialized capabilities that keep your calendar full and your phones answered.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="rounded-2xl bg-white text-slate-900 p-8 shadow-2xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center mb-6 shadow-md">
+              <i data-lucide="phone-missed" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Instant Missed-Call Recovery</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Automatically fires an intelligent SMS in under 15 seconds after an unanswered call, engaging the prospect before they call your competitors.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-blue-600">
+            Guaranteed Sub-15s SLA
+          </div>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="rounded-2xl bg-white text-slate-900 p-8 shadow-2xl border-2 border-blue-500 flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center mb-6 shadow-md">
+              <i data-lucide="calendar-check" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">24/7 Smart Appointment Booking</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              AI checks technician availability, travel zones, and buffer times to book confirmed appointments straight into your calendar and CRM.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-blue-600">
+            Jobber, Jane & Google Calendar Sync
+          </div>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="rounded-2xl bg-white text-slate-900 p-8 shadow-2xl flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-blue-600 text-white flex items-center justify-center mb-6 shadow-md">
+              <i data-lucide="database" class="w-6 h-6"></i>
+            </div>
+            <h3 class="text-2xl font-bold mb-3">Database Lead Reactivation</h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-6">
+              Rekindle past clients with personalized seasonal check-up offers. Revitalizes dormant databases into immediate high-margin revenue with $0 ad spend.
+            </p>
+          </div>
+          <div class="pt-4 border-t border-slate-100 text-xs font-semibold text-blue-600">
+            Instant Pipeline Generation
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. 3-STEP PROCESS -->
+  <section id="how-it-works" class="py-24 bg-slate-950/70 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+          Live & Booking in 5 Days
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg">
+          A seamless, non-disruptive onboarding process handled entirely by our engineering team.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+          <span class="text-3xl font-extrabold text-blue-500 font-mono block mb-4">01</span>
+          <h3 class="text-2xl font-bold text-white mb-2">Connect</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            We sync your existing phone line, Google Calendar, and industry CRM in 15 minutes. No changing your business number.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+          <span class="text-3xl font-extrabold text-blue-500 font-mono block mb-4">02</span>
+          <h3 class="text-2xl font-bold text-white mb-2">Train</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            We train the AI on your service offerings, dispatch rules, pricing guidelines, and FAQ document so it speaks in your exact voice.
+          </p>
+        </div>
+
+        <div class="p-8 rounded-2xl bg-slate-900 border border-slate-800">
+          <span class="text-3xl font-extrabold text-blue-500 font-mono block mb-4">03</span>
+          <h3 class="text-2xl font-bold text-white mb-2">Launch</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            We test simulated call scenarios, verify calendar locking, and switch the system live to capture high-ticket appointments 24/7.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. PRICING TABLE -->
+  <section id="pricing" class="py-24 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+          Transparent, ROI-Driven Plans
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg">
+          No long contracts. Turnkey setup included. Pays for itself in 1–2 booked jobs.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+        <!-- Starter Plan -->
+        <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-2">Starter</h3>
+            <p class="text-slate-400 text-xs mb-6">For solo operators & boutique clinics needing missed-call recovery.</p>
+            <div class="mb-6 pb-6 border-b border-slate-800">
+              <span class="text-3xl sm:text-4xl font-extrabold text-white font-mono">₹19,999</span>
+              <span class="text-slate-400 text-sm">/month</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Instant Missed-Call Text Back (&lt;15s)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> 1 Booking Funnel & Calendar Sync</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> 250 AI Conversations / mo</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Email Support & 5-Day Setup</li>
+            </ul>
+          </div>
+          <a href="#contact" class="w-full py-3 text-center text-xs font-bold text-white bg-slate-800 hover:bg-slate-700 rounded-xl border border-slate-700 transition-colors">Select Starter</a>
+        </div>
+
+        <!-- Growth Plan -->
+        <div class="p-8 rounded-3xl bg-white text-slate-900 ring-4 ring-blue-500/50 flex flex-col justify-between shadow-2xl scale-100 lg:-translate-y-2">
+          <div>
+            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider block mb-2">Most Popular Choice</span>
+            <h3 class="text-2xl font-bold mb-2">Growth</h3>
+            <p class="text-slate-600 text-xs mb-6">Complete automated booking for busy contractors & clinics.</p>
+            <div class="mb-6 pb-6 border-b border-slate-200">
+              <span class="text-3xl sm:text-4xl font-extrabold text-slate-900 font-mono">₹39,999</span>
+              <span class="text-slate-500 text-sm">/month</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-700 mb-8 font-medium">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Everything in Starter, plus:</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Multi-channel SMS + WhatsApp + Web</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Direct CRM Sync (Jobber, Jane, ServiceTitan)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> 1,000 AI Conversations / mo</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Database Lead Reactivation (500 contacts)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-blue-600"></i> Dedicated Private Slack Channel</li>
+            </ul>
+          </div>
+          <a href="#contact" class="w-full py-3.5 text-center text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg shadow-blue-600/30 transition-all">Select Growth Plan</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-2">Premium</h3>
+            <p class="text-slate-400 text-xs mb-6">Voice AI & multi-location logic for high-scale practices.</p>
+            <div class="mb-6 pb-6 border-b border-slate-800">
+              <span class="text-3xl sm:text-4xl font-extrabold text-white font-mono">₹79,999</span>
+              <span class="text-slate-400 text-sm">/month</span>
+            </div>
+            <ul class="space-y-3 text-xs text-slate-300 mb-8">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Everything in Growth, plus:</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> AI Voice Receptionist Phone Answering</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Multi-Location & Multi-Staff Routing</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Unlimited AI Conversations</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> 24/7 Priority Emergency Support SLA</li>
+            </ul>
+          </div>
+          <a href="#contact" class="w-full py-3 text-center text-xs font-bold text-white bg-slate-800 hover:bg-slate-700 rounded-xl border border-slate-700 transition-colors">Select Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. INTERACTIVE FAQ ACCORDION -->
+  <section id="faq" class="py-24 bg-slate-950/60 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-slate-400 text-base">
+          Clear answers on integrations, setup time, and guarantee.
+        </p>
+      </div>
+
+      <div class="space-y-4" id="faq-container">
+        <!-- FAQ item 1 -->
+        <div class="faq-item rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left flex items-center justify-between text-base font-bold text-white">
+            <span>How fast does the AI respond to a missed call?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-slate-300 hidden">
+            The AI triggers within 15 seconds after an unanswered call. The caller receives a branded, personalized SMS inquiring about their service need before they have time to search for a competitor.
+          </div>
+        </div>
+
+        <!-- FAQ item 2 -->
+        <div class="faq-item rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left flex items-center justify-between text-base font-bold text-white">
+            <span>Does this replace my front desk receptionist or office staff?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-slate-300 hidden">
+            No, it assists them. When staff are busy on another line, with a patient, or driving, LocalFlow handles the repetitive scheduling triage so appointments land pre-qualified on your calendar.
+          </div>
+        </div>
+
+        <!-- FAQ item 3 -->
+        <div class="faq-item rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left flex items-center justify-between text-base font-bold text-white">
+            <span>Which booking software and CRMs do you integrate with?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-slate-300 hidden">
+            We integrate with Google Calendar, Outlook 365, Jobber, ServiceTitan, Jane App, Housecall Pro, GoHighLevel, and over 40+ leading platforms.
+          </div>
+        </div>
+
+        <!-- FAQ item 4 -->
+        <div class="faq-item rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left flex items-center justify-between text-base font-bold text-white">
+            <span>How long does setup and onboarding take?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-slate-300 hidden">
+            Our standard turnkey onboarding takes 5 business days. Day 1 is number & calendar mapping (15 mins), Days 2–3 knowledge training, and Days 4–5 rigorous simulation testing before go-live.
+          </div>
+        </div>
+
+        <!-- FAQ item 5 -->
+        <div class="faq-item rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden">
+          <button class="faq-btn w-full p-6 text-left flex items-center justify-between text-base font-bold text-white">
+            <span>What if the AI encounters a question it doesn't know?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-slate-400 transition-transform"></i>
+          </button>
+          <div class="faq-content px-6 pb-6 text-sm text-slate-300 hidden">
+            The AI politely notes that it will consult the master technician/office lead, and immediately dispatches a priority alert with the full message history to your team.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. CONTACT / AUDIT REQUEST FORM -->
+  <section id="contact" class="py-24 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        
+        <div class="lg:col-span-5">
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">
+            Claim Your Free 24/7 AI Booking Audit
+          </h2>
+          <p class="text-slate-400 text-base mb-8">
+            In 15 minutes, we examine your call funnel, calculate your revenue leaks, and demonstrate a live AI assistant trained on your services.
+          </p>
+
+          <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 space-y-4 text-xs">
+            <h4 class="font-bold uppercase tracking-wider text-slate-400">Direct Agency Contact</h4>
+            <a href="https://wa.me/919748199707" class="flex items-center gap-3 text-slate-300 hover:text-emerald-400">
+              <i data-lucide="message-square" class="w-4 h-4 text-emerald-400"></i>
+              <span>WhatsApp: +91 9748199707</span>
+            </a>
+            <a href="mailto:anirbanaichamp@gmail.com" class="flex items-center gap-3 text-slate-300 hover:text-blue-400">
+              <i data-lucide="mail" class="w-4 h-4 text-blue-400"></i>
+              <span>Email: anirbanaichamp@gmail.com</span>
+            </a>
+            <div class="flex items-center gap-3 text-slate-400">
+              <i data-lucide="map-pin" class="w-4 h-4 text-slate-400"></i>
+              <span>3/126, Paschim Putiary, Kolkata-700041</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-7">
+          <div class="bg-white rounded-3xl p-8 shadow-2xl text-slate-900 border border-slate-200">
+            <form id="audit-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Your Name *</label>
+                  <input type="text" required id="form-name" placeholder="John Miller" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Business Name *</label>
+                  <input type="text" required id="form-biz" placeholder="Apex Heating & Air" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Industry *</label>
+                  <select id="form-industry" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none bg-white">
+                    <option>HVAC & Cooling</option>
+                    <option>Roofing & Exteriors</option>
+                    <option>Plumbing & Rooter</option>
+                    <option>Dental Practice</option>
+                    <option>MedSpa & Aesthetics</option>
+                    <option>Other Local Service</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-700 mb-1">Phone Number *</label>
+                  <input type="tel" required id="form-phone" placeholder="(555) 234-5678" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">Email Address *</label>
+                <input type="email" required id="form-email" placeholder="john@apexclimate.com" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none" />
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-slate-700 mb-1">What is your biggest bottleneck? *</label>
+                <select id="form-bottleneck" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm text-slate-900 focus:ring-2 focus:ring-blue-600 focus:outline-none bg-white">
+                  <option>Missed calls when staff is busy on job sites</option>
+                  <option>Losing leads to competitors who answer faster</option>
+                  <option>No after-hours or weekend phone coverage</option>
+                  <option>Endless back-and-forth phone tag scheduling</option>
+                  <option>Dormant past client database not generating repeat work</option>
+                </select>
+              </div>
+
+              <button type="submit" class="w-full py-4 text-sm font-bold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-lg shadow-blue-600/30 transition-all flex items-center justify-center gap-2 cursor-pointer">
+                <i data-lucide="send" class="w-4 h-4"></i>
+                <span>Submit Free Audit Request</span>
+              </button>
+            </form>
+
+            <div id="form-success" class="hidden text-center py-8">
+              <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i data-lucide="check-circle" class="w-8 h-8"></i>
+              </div>
+              <h3 class="text-2xl font-bold text-slate-900 mb-2">Audit Request Received!</h3>
+              <p class="text-slate-600 text-sm mb-6">Our automation engineer is preparing your custom missed-revenue analysis.</p>
+              <a id="success-wa-btn" href="#" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 text-white rounded-xl text-xs font-bold">
+                <i data-lucide="message-square" class="w-4 h-4"></i>
+                <span>Fast-Track on WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800 text-slate-400 text-xs py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div class="md:col-span-2 space-y-3">
+          <span class="text-xl font-bold text-white">LocalFlow<span class="text-blue-500">.AI</span></span>
+          <p class="text-slate-400 text-xs max-w-sm">A specialized AI agency by NexGen Creative. Engineering autonomous booking engines for local high-ticket service contractors and medical clinics.</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-white uppercase text-[11px] mb-3">Agency Contact</h4>
+          <p class="mb-1">WhatsApp: +91 9748199707</p>
+          <p class="mb-1">Email: anirbanaichamp@gmail.com</p>
+          <p>Kolkata-700041, India</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-white uppercase text-[11px] mb-3">Guarantee</h4>
+          <p class="text-slate-400 text-xs">14-day lead capture guarantee. Sub-30-second automated response SLA.</p>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-slate-900 flex justify-between items-center text-slate-500 text-[11px]">
+        <span>© 2026 LocalFlow AI • Powered by NexGen Creative. All rights reserved.</span>
+        <span>Zero Backend Dependencies</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JS Interactions -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Accordion Logic
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('.faq-icon');
+        const isHidden = content.classList.contains('hidden');
+        
+        // Close others
+        document.querySelectorAll('.faq-content').forEach(c => c.classList.add('hidden'));
+        document.querySelectorAll('.faq-icon').forEach(i => i.classList.remove('rotate-180'));
+        
+        if (isHidden) {
+          content.classList.remove('hidden');
+          icon.classList.add('rotate-180');
+        }
+      });
+    });
+
+    // Audit Form Handler
+    const auditForm = document.getElementById('audit-form');
+    const formSuccess = document.getElementById('form-success');
+    const successWaBtn = document.getElementById('success-wa-btn');
+
+    if (auditForm) {
+      auditForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const name = document.getElementById('form-name').value;
+        const biz = document.getElementById('form-biz').value;
+        const industry = document.getElementById('form-industry').value;
+        const phone = document.getElementById('form-phone').value;
+        const email = document.getElementById('form-email').value;
+        const bottleneck = document.getElementById('form-bottleneck').value;
+
+        // WhatsApp deep-link
+        const waMsg = encodeURIComponent("Hi LocalFlow AI! I just requested a Free Audit.\n\nName: " + name + "\nBusiness: " + biz + " (" + industry + ")\nPhone: " + phone + "\nBottleneck: " + bottleneck);
+        successWaBtn.href = "https://wa.me/919748199707?text=" + waMsg;
+
+        // Mailto trigger fallback
+        const mailtoUri = "mailto:anirbanaichamp@gmail.com?subject=" + encodeURIComponent("Audit Request: " + biz) + "&body=" + waMsg;
+        window.location.href = mailtoUri;
+
+        // Show success
+        auditForm.classList.add('hidden');
+        formSuccess.classList.remove('hidden');
+        lucide.createIcons();
+      });
+    }
+  </script>
+</body>
+</html>
